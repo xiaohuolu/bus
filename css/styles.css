@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bus_tab {
+  display: flex;
+  /*justify-content: space-around;*/
+  height: 7vh;
+  margin: 10% 10% 0 10%;
+}
+
+.active {
+  background: rgb(78, 185, 227) !important;
+  color: #fff;
+}
+
+.bus_tab button {
+  flex: 1;
+  border: none;
+  background: inherit;
+  height: 100%;
+}
+
+.back {
+  font-size: 16px;
+  margin: 2%;
+}
+
+.bus_line_wrap {
+  display: flex;
+  /*     padding:0 20px;*/
+  box-sizing: border-box;
+  margin-top: 10%;
+  justify-content: space-around;
+}
+
+.bus_line_wrap input {
+  width: 80%;
+  height: 40px;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.bus_line_wrap a {
+  width: 10%;
+  text-align: center;
+  line-height: 46px;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: indianred;
+}
+
+#bus_line_list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#bus_station_list {
+  margin-top: 20px;
+  list-style: none;
+}
+
+#bus_line_list li {
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+#bus_station_list li {
+  line-height: 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.fa-bus {
+  color: #0000FF;
+  margin-right: 20px;
+  margin-left: 10%;
+}
+
+.fa-angle-right {
+  float: right;
+  margin-right: 10%;
+  line-height: 31px;
+}
+
+#bus_line_list li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+#bus_station_list li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+}
+
+#storage {
+  list-style: none;
+}
+
+#storage_station {
+  list-style: none;
+}
+
+.storage h3 {
+  margin-top: 5%;
+  text-align: center;
+  background: #eee;
+}
+
+.storage_station h3 {
+  margin-top: 5%;
+  text-align: center;
+  background: #eee;
+}
+
+#storage li {
+  padding: 0 10%;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+#storage_station li {
+  padding: 0 10%;
+  line-height: 50px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.clean {
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #4EB9E3;
+}
+
+/*actual_time*/
+
+.bus_img {
+  color: inherit;
+  left: 80%;
+  transform: translateX(-12px);
+  z-index: 9999;
+  position: absolute;
+  display: inline-block;
+  background: #eee;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+#bus_line_name {
+  font-size: 25px;
+}
+
+.bus_line_name span.station_bg {
+  position: relative;
+  color: #ffffff;
+  width: 65vw;
+  display: inline-block;
+  font-size: 0.9em;
+  border-radius: 0.5em;
+  background-color: #4eb9e3;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.bus_line_name span.station_bg:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid rgba(0, 0, 0, 0);
+  border-left-width: 0;
+  border-right-color: #4eb9e3;
+  top: 0%;
+  right: 100%;
+  margin-top: 0.9em;
+  border-left-width: 0.0em;
+  border-right-width: 0.6em;
+  border-bottom-width: 0.4em;
+  border-top-width: 0.4em;
+}
+
+.top_content {
+  background: #fff;
+  height: 10vh;
+}
+
+.top_content_message {
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+  align-items: center;
+  margin: 10% 5% 5% 5%;
+}
+
+.top_content p {
+  text-align: center;
+  height: 50%;
+}
+
+.top_content p span {
+  color: indianred;
+}
+
+#bus_station {
+  list-style: none;
+  margin: 10% 5% 0 5%;
+}
+
+#bus_station li {
+  line-height: 40px;
+}
+
+#bus_station li div.order {
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  margin-right: 30px;
+}
+
+#bus_station li div.next_bus {
+  text-align: center;
+  width: 65vw;
+  margin-left: 59px;
+  display: none;
+}
+
+.bus_list {
+  position: relative;
+  background: #eee;
+}
+
+.bus_status {
+  position: absolute;
+  width: 2px;
+  background: #000;
+  height: 100%;
+  top: 0;
+  left: 90%;
+}
+
+#flag {
+  background: indianred;
+  display: inline-block;
+  margin-left: 10%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  color: #fff;
+}

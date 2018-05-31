@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<!--<meta http-equiv="refresh" content="20">-->
+	<title>公交线路</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/styles.css" />
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/public.js"></script>
+
+	<style>
+		#active {
+			color: #0000FF;
+		}
+	</style>
+</head>
+
+<body>
+	<!--<span class="fa fa-angle-left back">    返回</span>-->
+	<section id="bus_station_wrap">
+		<div class="top_content">
+			<div class="top_content_message">
+				<strong id="bus_line_name"> </strong>
+				<span id="startStation"> </span>
+				<span class="fa fa-arrow-right" style="color:#0000FF"></span>
+				<span id="endStation"> </span>
+			</div>
+			<p>首末班：<span id="startTime"></span> - <span id="endTime"></span> <span id="flag" class="fa fa-exchange"></span></p>
+		</div>
+
+		<div class="bus_list">
+			<ul id="bus_station">
+
+			</ul>
+
+			<div class="bus_status">
+
+			</div>
+		</div>
+	</section>
+
+	<script src="js/actual_time.js"></script>
+</body>
+
+</html>
